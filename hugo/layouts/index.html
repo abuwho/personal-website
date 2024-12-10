@@ -19,15 +19,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ .Site.Title }}</title>
     <link rel="stylesheet" href="/styles/tailwind.output.css" />
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   </head>
   <body class="bg-zinc-900">
     <div id="__root">
       <!-- Navbar -->
-      {{ partial "navbar.html" . }}
+      <div class="sticky top-0">{{ partial "navbar.html" . }}</div>
       <div class="all-content flex justify-center align-center px-6">
         <div class="flex flex-col gap-[60px] py-8 w-full md:max-w-[1224px]">
-          {{ partial "overview.html" . }}
-          {{ partial "about.html" . }}
+          {{ partial "overview.html" . }} {{ partial "about.html" . }} {{
+          partial "all-projects.html" . }}
         </div>
       </div>
     </div>
