@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:hugo": "cd hugo && hugo server",
-    "dev:css": "npx tailwindcss -i ./hugo/assets/styles/tailwind.input.css -o ./hugo/static/styles/tailwind.output.css --watch",
-    "build:css": "npx tailwindcss -i ./hugo/assets/styles/tailwind.input.css -o ./hugo/static/styles/tailwind.output.css"
+    "dev:css": "npx tailwindcss -i ./hugo/static/styles/tailwind.input.css -o ./hugo/static/styles/tailwind.output.css --watch",
+    "build:css": "npx tailwindcss -i ./hugo/static/styles/tailwind.input.css -o ./hugo/static/styles/tailwind.output.css"
   },
   "author": "abuwho",
   "license": "ISC",
