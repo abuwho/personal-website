@@ -1,8 +1,16 @@
-<div class="text-white flex flex-col gap-3 md:gap-5 text-center">
-  <div class="italic text-2xl md:text-4xl">projects</div>
-  <div class="md:text-xl">Some things I’ve worked (or am working) on</div>
+<div class="text-white flex flex-col gap-3 md:gap-5">
+  <div class="italic text-2xl md:text-4xl text-center">projects</div>
+  <div class="md:text-xl text-center">
+    Some things I’ve worked (or am working) on
+  </div>
 
-  <div class="flex flex-col gap-2 md:gap-3">
+  <div class="flex flex-col gap-[10px] md:gap-[20px]">
+    <div>
+      {{ partial "project-item.html" (dict "image" "projects/tek.jpg" "title" "Tek.fm" "description" `The website provides real-time news coverage from around the world. It features categories like politics, economy, technology, society, and entertainment, offering both breaking news and in-depth stories. The site includes updates on events, commentary, and occasional lighter "good news" segments.` "builtWith" `TypeScript, Nuxt+Vue, Java` ) }}
+    </div>
 
+    <div>
+      {{ partial "project-item.html" (dict "image" "projects/desigram.svg" "title" "Desigram.ru" "description" `A hub for design enthusiasts, offering resources like guides, case studies, job postings, and news in fields such as graphic, UI/UX, and motion design. It also features tools, references, and templates for creative projects. The platform connects designers through blogs and curated Telegram channels focused on inspiration, learning, and professional growth.` "builtWith" `TypeScript, Nuxt+Vue, TailwindCSS, Supabase` ) }}
+    </div>
   </div>
 </div>
